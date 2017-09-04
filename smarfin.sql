@@ -1,0 +1,40 @@
+﻿SET NAMES UTF8;
+DROP DATABASE IF EXISTS estar;
+CREATE DATABASE estar CHARSET=UTF8;
+USE estar;
+##用户表
+CREATE  TABLE user_table(
+    userid TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(48) NOT NULL UNIQUE,
+    email VARCHAR(60) NOT NULL,
+    pwd BIGINT NOT NULL
+);
+INSERT user_table VALUES(null,'admin','13@qq.com',123456);
+SELECT * FROM user_table;
+##组表
+CREATE TABLE group_table(
+	groupid TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	groupname VARCHAR(48) NOT NULL UNIQUE,
+	userid TINYINT NOT NULL
+);
+SELECT * FROM group_table;
+##设备表
+CREATE TABLE device_table(
+	deviceid TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	devicename VARCHAR(48) NOT NULL UNIQUE,
+	groupid TINYINT NOT NULL
+);
+SELECT * FROM device_table;
+##设备动态信息表
+CREATE TABLE  deviceInformation_table(
+	deviceid VARCHAR(48) NOT NULL,
+	lgt VARCHAR(48) NOT NULL,
+	lat VARCHAR(48) NOT NULL,
+	state VARCHAR(48) NOT NULL,
+	dir VARCHAR(48) NOT NULL,
+	speed TINYINT NOT NULL,
+	time VARCHAR(64) NOT NULL
+);
+SELECT * FROM deviceInformation_table;
+
+

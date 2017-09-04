@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上海劲易电子科技有限公司</title>
+    <link rel="icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=bbc25d7756be45ee1b5666a59f3d3d69"></script>
+    <script src="js/onlineExperience.js"></script>
+</head>
+<body>
+<!--网站头部-->
+<script src="js/header.js"></script>
+<!--主题内容-->
+<div id="nav">
+    <div class="nav_box">
+        <ul>
+            <li><a href="index.html">首页</a><i></i><i></i></li>
+            <li><a href="productDisplay.html">产品展示</a><i></i></li>
+            <li><a href="solution.html">解决方案</a><i></i></li>
+            <li><a href="#" class="color">在线体验</a></li>
+            <li><a href="downloadCenter.html">下载中心</a><i></i></li>
+            <li><a href="contactUs.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--所处位置-->
+<div id="place">
+    <p><i class="icon loc_size">&#xe947;</i>您现在所处位置:&nbsp首页&gt<span>在线体验</span></p>
+</div>
+<div id="login_onlineExperience">
+    <div class="login_onlineExperience_box">
+        <ul>
+            <li><a href="#addgroup">添加组</a></li>
+            <li><a href="#adddevice" class="noarrgroup">添加设备</a></li>
+            <li><a href="#updategroup" class="noarrgroup">修改组</a></li>
+            <li><a href="#deletegroup" class="noarrgroup">删除组</a></li>
+            <li><a href="#deletedevice" class="noarrgroup">删除设备</a></li>
+        </ul>
+        <div class="login_onlineExperience_aside">
+                <h2>设备区</h2>
+                <div class="group_box">
+
+                </div>
+        </div>
+        <div class="login_onlineExperience_map">
+            <div id="login_map">
+                <div class="click_left_content">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="operating">
+        <div id="addgroup">
+            <button>X</button>
+            <p>上海劲易电子科技有限公司</p>
+            <p><span>请输入要添加的组</span></p>
+            <p><input type="text" class="input" placeholder="请输入组名"></p>
+            <p>
+                <input type="button" value="添加" class="add">
+                <input type="submit" value="取消" class="delete">
+            </p>
+        </div>
+        <div id="adddevice">
+            <button>X</button>
+            <p>上海劲易电子科技有限公司</p>
+            <p>
+                <span>请选择组名称</span>
+                <select class="slt">
+
+                </select>
+            </p>
+            <p><span>设备编号:</span></p>
+            <p>
+                <input type="text" class="input" placeholder="请输入添加的设备名称">
+            </p>
+            <p>
+                <input type="button" value="添加" class="add">
+                <input type="button" value="取消" class="delete">
+            </p>
+
+        </div>
+        <div id="updategroup">
+            <button>X</button>
+            <p>上海劲易电子科技有限公司</p>
+            <p>
+                <span>请选择要修改的组</span>
+                <select class="slt">
+
+                </select>
+            </p>
+            <p><input type="text" class="input" placeholder="请输入新的组名"></p>
+            <p>
+                <input type="button" value="修改" class="add">
+                <input type="button" value="取消" class="delete">
+            </p>
+
+        </div>
+        <div id="deletegroup">
+            <button>X</button>
+            <p>上海劲易电子科技有限公司</p>
+            <p><span>请选择要删除的组</span></p>
+            <p>
+                <select class="slt">
+
+                </select>
+            </p>
+            <p>
+                <input type="button" value="删除" class="add">
+            </p>
+
+        </div>
+        <div id="deletedevice">
+            <button>X</button>
+            <p>上海劲易电子科技有限公司</p>
+            <p>
+                <span>请选择组名</span>
+                <select class="slt">
+
+                </select>
+            </p>
+            <p>
+                <span>请选择设备</span>
+                <select class="deviceslt">
+                    <option value="">--请选择--</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="删除" class="add">
+            </p>
+
+        </div>
+    </div>
+</div>
+<!--网站尾部-->
+<script src="js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*总体布局*/
+*{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+header{
+    width:100%;
+}
+header>img{
+    float:left;
+    width:100%;
+}
+section{
+    clear:both;
+    width:100%;
+}
+section>ul{
+	width:100%;
+    overflow:hidden;
+}
+section li{
+    list-style:none;
+    width:100%;
+    float:left;
+    height:80px;
+    border-bottom:1px dotted #ccc;
+}
+section li:last-child{
+	border:0px;
+}
+section li>img{
+    max-width:20%;
+    height:60px;
+    float:left;
+    margin-top:10px;
+    margin-left:2%;
+}
+section li>a{
+ 	float:right;
+    height:79px;
+  	width:73%;
+    color:#000;
+    margin-right:2%;
+    line-height:25px;
+}
+@media screen and (max-width:768px){
+        header>img{
+               max-width:100%;
+           }
+      section li>img{
+        max-width:18%;
+    }
+}

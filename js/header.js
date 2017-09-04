@@ -1,0 +1,12 @@
+﻿document.writeln("<div id=\'top\'>");
+document.writeln("  <div class='top_box'>");
+document.writeln("    <div class=\'top_left'\>");
+document.writeln("            <img src='img/logo.png' alt=''>");
+document.writeln("    </div>");
+document.writeln("    <div class=\'top_center'\>");
+document.writeln("        <h3>上海劲易电子科技有限公司</h3>");
+document.writeln("    </div>");
+document.writeln("    <div class=\'top_right'\>");
+document.writeln("    </div>");
+document.writeln("  </div>");
+document.writeln("</div>");
